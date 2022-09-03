@@ -1,10 +1,17 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+# pointer API
+
+# Scss 变量与 JS 公用
+
+https://vitejs.cn/config/#css-preprocessoroptions
+
+https://segmentfault.com/a/1190000021627804
+
+```ts
+// vite.config.ts
 import { vars } from './src/assets/style/vars.scss.js'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  // ……
   css: {
     preprocessorOptions: {
       scss: {
@@ -15,3 +22,5 @@ export default defineConfig({
     }
   }
 })
+
+```
