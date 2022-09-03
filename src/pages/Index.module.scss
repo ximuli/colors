@@ -1,4 +1,13 @@
 .wrapper {
   // color: aquamarine;
   display: flex;
+  height: 100vh;
+  transition: all .5s ease;
 }
+
+// @media (orientation: portrait) {
+//   .wrapper {
+//     width: 100vw;
+//     flex-direction: column;
+//   }
+// }

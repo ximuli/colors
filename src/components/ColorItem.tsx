@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PointerEvent, useRef, useState } from 'react'
 import s from './ColorItem.module.scss'
 
 interface Props {
@@ -6,14 +6,33 @@ interface Props {
 }
 
 interface Options {
-  bgColor: string
+  bgColor: string,
+  title: string
 }
 
 export default function ColorItem(props: Props) {
-  const options:Options = props.colorOptions
+  const refDiv = useRef(null)
+  const options: Options = props.colorOptions
+
+  const onPointerEnter = (e: PointerEvent) => {
+    const element: HTMLDivElement = refDiv.current!
+    element.style.width = '30%'
+  }
+
+  const onPointerLeave = (e: PointerEvent) => {
+    const element: HTMLDivElement = refDiv.current!
+    element.style.width = '20%'
+  }
+
   return (
-    <div className={s.wrapper} style={ { backgroundColor: options.bgColor } }>
-      ColorItem
+    <div
+      ref={refDiv}
+      className={s.wrapper}
+      style={{ backgroundColor: options.bgColor }}
+      onPointerEnter={onPointerEnter}
+      onPointerLeave={ onPointerLeave }
+    >
+      <div className={s.title}>{ options.title}</div>
     </div>
   )
 }
