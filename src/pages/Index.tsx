@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import s from './Index.module.scss'
 import ColorItem from '../components/ColorItem'
-import { vars } from '../assets/style/vars.scss.js'
+import { vars } from '../assets/style/vars.scss'
 
 export default function Index() {
   const [count, setCount] = useState(0)
