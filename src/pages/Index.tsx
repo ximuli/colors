@@ -1,26 +1,33 @@
 import { useState } from 'react'
 import s from './Index.module.scss'
 import ColorItem from '../components/ColorItem'
+import { vars } from '../assets/style/vars.scss.js'
 
 export default function Index() {
   const [count, setCount] = useState(0)
   const optionsList = [
     {
-      bgColor: 'rgb(193, 24, 39)'
+      bgColor: vars.$GlowingRed,
+      title: '霞光红',
     },
     {
-      bgColor: 'rgb(255, 227, 0)'
+      bgColor: vars.$SpringYellow,
+      title: '迎春黄',
     },
     {
-      bgColor: 'rgb(31, 75, 149)'
+      bgColor: vars.$SkyBlue,
+      title: '天霁蓝',
     },
     {
-      bgColor: 'rgb(174, 185, 184)'
+      bgColor: vars.$GreatWallGrey,
+      title: '长城灰',
     },
     {
-      bgColor: 'rgb(239, 237, 220)'
+      bgColor: vars.$SnowWhite,
+      title: '瑞雪白',
     }
   ]
+
   return (
     <div className={s.wrapper}>
       {
