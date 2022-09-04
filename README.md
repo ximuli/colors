@@ -30,3 +30,11 @@ export default defineConfig({
 })
 
 ```
+
+# 鼠标特效
+
+https://tholman.com/cursor-effects/
+
+# TS中引入没有类型声明的第三方库
+
+https://ts.xcatliu.com/basics/declaration-files#npm-%E5%8C%85
