@@ -3,10 +3,13 @@
   // flex-grow: 1;
   width: 20%;
   transition: all .5s ease-in-out;
+  // flex-shrink: 0;
   .title {
     // https://developer.mozilla.org/zh-CN/docs/Web/CSS/writing-mode
+    font-size: 1em;
     writing-mode: vertical-lr;
-    margin-left: 8px;
+    letter-spacing: 0.1em;
     margin-top: 8px;
+    cursor: pointer;
   }
 }

@@ -18,13 +18,13 @@ export default function ColorItem(props: Props) {
   const onPointerEnter = (e: React.PointerEvent) => {
     const element: HTMLDivElement = refDiv.current!
     element.style.width = '30%'
-    element.style.fontSize = '2em'
+    element.style.fontSize = '3em'
   }
 
   const onPointerLeave = (e: React.PointerEvent) => {
     const element: HTMLDivElement = refDiv.current!
     element.style.width = '20%'
-    element.style.fontSize = '1em'
+    element.style.fontSize = '1.5em'
   }
 
   return (

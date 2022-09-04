@@ -17,7 +17,7 @@ export default function Index() {
       textColor: vars.$Silver
     },
     {
-      bgColor: vars.$SkyBlue,
+      bgColor: vars.$SapphireSky,
       title: '天霁蓝',
       textColor: vars.$White
     },
@@ -30,6 +30,46 @@ export default function Index() {
       bgColor: vars.$SnowWhite,
       title: '瑞雪白',
       textColor: vars.$Silver
+    },
+    {
+      bgColor: vars.$SkyBlue,
+      title: '天青',
+      textColor: vars.$White
+    },
+    {
+      bgColor: vars['$Plum-blossomPink'],
+      title: '梅红',
+      textColor: vars.$White
+    },
+    {
+      bgColor: vars.$BambooGreen,
+      title: '竹绿',
+      textColor: vars.$White
+    },
+    {
+      bgColor: vars.$IceBlue,
+      title: '冰蓝',
+      textColor: vars.$White
+    },
+    {
+      bgColor: vars.$PersimmonOrange,
+      title: '吉柿',
+      textColor: vars.$White
+    },
+    {
+      bgColor: vars.$Gold,
+      title: '金',
+      textColor: vars.$White
+    },
+    {
+      bgColor: vars.$Silver,
+      title: '银',
+      textColor: vars.$White
+    },
+    {
+      bgColor: vars.$ChineseInk,
+      title: '墨',
+      textColor: vars.$White
     },
   ]
 
