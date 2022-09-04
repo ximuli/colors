@@ -9,23 +9,28 @@ export default function Index() {
     {
       bgColor: vars.$GlowingRed,
       title: '霞光红',
+      textColor: vars.$White
     },
     {
       bgColor: vars.$SpringYellow,
       title: '迎春黄',
+      textColor: vars.$Silver
     },
     {
       bgColor: vars.$SkyBlue,
       title: '天霁蓝',
+      textColor: vars.$White
     },
     {
       bgColor: vars.$GreatWallGrey,
       title: '长城灰',
+      textColor: vars.$White
     },
     {
       bgColor: vars.$SnowWhite,
       title: '瑞雪白',
-    }
+      textColor: vars.$Silver
+    },
   ]
 
   return (

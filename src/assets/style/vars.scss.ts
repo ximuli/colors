@@ -1,5 +1,7 @@
 // variables
 export const vars = {
+  $White: '#FFFFFF',
+  // 2022冬奥会色彩系统
   // Five Primary Colors 五主色
   // 霞光红
   $GlowingRed: 'rgb(193, 24, 39)',

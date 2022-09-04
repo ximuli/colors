@@ -7,7 +7,8 @@ interface Props {
 
 interface Options {
   bgColor: string,
-  title: string
+  title: string,
+  textColor: string,
 }
 
 export default function ColorItem(props: Props) {
@@ -17,18 +18,20 @@ export default function ColorItem(props: Props) {
   const onPointerEnter = (e: React.PointerEvent) => {
     const element: HTMLDivElement = refDiv.current!
     element.style.width = '30%'
+    element.style.fontSize = '2em'
   }
 
   const onPointerLeave = (e: React.PointerEvent) => {
     const element: HTMLDivElement = refDiv.current!
     element.style.width = '20%'
+    element.style.fontSize = '1em'
   }
 
   return (
     <div
       ref={refDiv}
       className={s.wrapper}
-      style={{ backgroundColor: options.bgColor }}
+      style={{ backgroundColor: options.bgColor, color: options.textColor }}
       onPointerEnter={onPointerEnter}
       onPointerLeave={ onPointerLeave }
     >

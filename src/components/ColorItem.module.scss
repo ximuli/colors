@@ -4,6 +4,9 @@
   width: 20%;
   transition: all .5s ease-in-out;
   .title {
-    color: #FFFFFF;
+    // https://developer.mozilla.org/zh-CN/docs/Web/CSS/writing-mode
+    writing-mode: vertical-lr;
+    margin-left: 8px;
+    margin-top: 8px;
   }
 }
