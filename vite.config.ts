@@ -13,5 +13,8 @@ export default defineConfig({
         }).join('\n')
       }
     }
+  },
+  server: {
+    host: '0.0.0.0'
   }
 })
