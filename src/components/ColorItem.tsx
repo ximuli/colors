@@ -14,12 +14,12 @@ export default function ColorItem(props: Props) {
   const refDiv = useRef(null)
   const options: Options = props.colorOptions
 
-  const onPointerEnter = (e: PointerEvent) => {
+  const onPointerEnter = (e: React.PointerEvent) => {
     const element: HTMLDivElement = refDiv.current!
     element.style.width = '30%'
   }
 
-  const onPointerLeave = (e: PointerEvent) => {
+  const onPointerLeave = (e: React.PointerEvent) => {
     const element: HTMLDivElement = refDiv.current!
     element.style.width = '20%'
   }
